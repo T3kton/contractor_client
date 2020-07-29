@@ -16,3 +16,10 @@ import via the standard golang module method, adding to you imports::
 then tell go to download the library::
 
   go get github.com/t3kton/contractor_client/go
+
+
+
+To Generate
+-----------
+
+../../cinp/utils/cinp-codegen -l go -d go -s contractor http://127.0.0.1:8888/api/v1/
