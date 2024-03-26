@@ -1,2 +1,4 @@
 github.com/cinp/go v0.9.1 h1:HzUVsfQog0Klp6xIKWiCgG0jCOd15mqMTSYh6m/6SzU=
 github.com/cinp/go v0.9.1/go.mod h1:oHlafxc+sfb1nOOWeavCW3vyeV5zDBIdGOXucSvQXk4=
+github.com/cinp/go v1.1.5 h1:u3bZTjCiSWophe/egNGvWn/fGja1ZgbCYl0kDPrm9Rg=
+github.com/cinp/go v1.1.5/go.mod h1:zplBcKLFp0F42AI7cMZVZrRwGY71SpdWFQbLiqltZ9I=

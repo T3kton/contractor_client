@@ -23,3 +23,6 @@ To Generate
 -----------
 
 ../../cinp/utils/cinp-codegen -l go -d go/autogen -s contractor http://127.0.0.1:8888/api/v1/
+cd go
+golint ./...
+go vet ./...

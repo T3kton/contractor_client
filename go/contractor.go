@@ -4,10 +4,12 @@ import (
 	ContractorAutoGen "github.com/t3kton/contractor_client/go/autogen"
 )
 
+// Contractor struct
 type Contractor struct {
 	*ContractorAutoGen.Contractor
 }
 
+// NewContractor creates a new Contractor and logs it in with the username and password
 func NewContractor(host string, proxy string, username string, password string) (*Contractor, error) {
 	c, err := ContractorAutoGen.NewContractor(host, proxy)
 	if err != nil {
