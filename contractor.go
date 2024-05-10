@@ -12,15 +12,25 @@ func NewContractor(ctx context.Context, log *slog.Logger, host string, proxy str
 		return nil, err
 	}
 
-	token, err := c.AuthUserCallLogin(ctx, username, password)
+	err = c.Login(ctx, username, password)
 	if err != nil {
 		return nil, err
+	}
+
+	return c, nil
+}
+
+// Login calles login and sets the auth headers
+func (c *Contractor) Login(ctx context.Context, username string, password string) error {
+	token, err := c.AuthUserCallLogin(ctx, username, password)
+	if err != nil {
+		return err
 	}
 
 	c.SetHeader("Auth-Id", username)
 	c.SetHeader("Auth-Token", token)
 
-	return c, nil
+	return nil
 }
 
 // Logout calles logout and removes the auth headers
